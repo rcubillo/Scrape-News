@@ -7,12 +7,13 @@ This is a web app that lets users view and leave comments on the latest news. Us
 ### Technologies
 
 - npm packages 
-
+```sh
    1. express
    2. express-handlebars
    3. mongoose
    4. cheerio
    5. axios
+```
 
 - This project has been deployed to Heroku.
 
@@ -21,6 +22,7 @@ This is a web app that lets users view and leave comments on the latest news. Us
 ## Instructions
 
   1. Whenever a user visits this site, the app should scrape stories from a news outlet of your choice and display them for the user. Each scraped article should be saved to the application database. The app should scrape and display the following information for each article:
+  ```sh
 
      * Headline - the title of the article
 
@@ -29,6 +31,7 @@ This is a web app that lets users view and leave comments on the latest news. Us
      * URL - the url to the original article
 
      * Feel free to add more content to your database (photos, bylines, and so on).
+```     
 
   2. Users should also be able to leave comments on the articles displayed and revisit them later. The comments should be saved to the database as well and associated with their articles. Users should also be able to delete comments left on articles. All stored comments should be visible to every user.
   
