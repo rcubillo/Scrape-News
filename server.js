@@ -146,6 +146,20 @@ app.post("/save", function(req, res){
 		});
 });
 
+app.get("/clean", function(req, res){
+	// db.Article
+	// 	.remove({ saved: false })
+	// 	.then(function(dbArticles){
+	// 		// if any articles are found, send them to the client
+			res.send("Database updated.");
+	// 	})
+	// 	.catch(function(err){
+	// 		// if an error occurs, send it back to the client
+	// 		res.json(err);
+	// 	});
+});
+
+
 
 // Start the server
 app.listen(PORT, function() {

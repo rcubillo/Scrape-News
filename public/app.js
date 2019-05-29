@@ -81,7 +81,6 @@ $(document).on("click", ".save-article", function(){
 
 	$(this).text("Saved");
 	$(this).attr("disabled", "disabled");
-
 	// POST request to change the article to saved
 	$.ajax({
 		method: "POST",
@@ -97,3 +96,8 @@ $(document).on("click", ".save-article", function(){
 		console.log(data);
 	});
 });
+
+
+// ///**/*/*/**/*/*/**/ */
+
+
