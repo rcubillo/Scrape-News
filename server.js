@@ -64,7 +64,7 @@ app.get("/scrape", function(req, res) {
     });
 
     // // Send a message to the client
-    // res.send("Scrape Complete");
+    res.send("Scrape Complete");
   });
 });
 
@@ -80,6 +80,20 @@ app.get("/articles", function(req, res) {
       // If an error occurred, send it to the client
       res.json(err);
     });
+});
+
+// GET route for saved articles
+app.get("/savedArticles", function(req, res){
+	db.Article
+		.find({ saved: true })
+		.then(function(dbArticles){
+			// if any articles are found, send them to the client
+			res.json(dbArticles);
+		})
+		.catch(function(err){
+			// if an error occurs, send it back to the client
+			res.json(err);
+		});
 });
 
 // Route for grabbing a specific Article by id, populate it with it's note
@@ -117,6 +131,21 @@ app.post("/articles/:id", function(req, res) {
       res.json(err);
     });
 });
+
+// POST route for saving/unsaving an article
+app.post("/save", function(req, res){
+	db.Article
+		.findOneAndUpdate({ _id: req.body.id }, { saved: req.body.saved }, { new: true })
+		.then(function(dbArticle){
+			// send the article back to the client
+			res.json(dbArticle);
+		})
+		.catch(function(err){
+			// if an error occurs, send it back to the client
+			res.json(err);
+		});
+});
+
 
 // Start the server
 app.listen(PORT, function() {
