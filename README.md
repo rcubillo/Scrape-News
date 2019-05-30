@@ -15,6 +15,11 @@ This is a web app that lets users view and leave comments on the latest news. Us
    5. axios
 ```
 
+## Live Demo
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://radiant-tor-14793.herokuapp.com/)
+
+
 - This project has been deployed to Heroku.
 
 - This code should connect mongoose to your remote mongolab database if deployed, but otherwise will connect to the local mongoHeadlines database on your computer.
