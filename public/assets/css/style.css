@@ -40,10 +40,14 @@ textarea {
 
 /* Each Button */
 .btn {
-  margin-right: 8px;
+  /* margin-right: 8px;
+  margin-top: 6px;
+  margin-bottom: 5px; */
+  margin: 5px 8px 8px 8px;
 }
 
 /* titles */
 .title {
     color:white;
 }
+
