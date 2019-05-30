@@ -20,7 +20,7 @@ This is a web app that lets users view and leave comments on the latest news. Us
 
 ## Live Demo
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://radiant-tor-14793.herokuapp.com/)
+[![Deploy](https://pacific-lake-15233.herokuapp.com/)
 
 
 - This project has been deployed to Heroku.
