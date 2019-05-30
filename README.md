@@ -19,9 +19,7 @@ This is a web app that lets users view and leave comments on the latest news. Us
 ```
 
 ## Live Demo
-
-[![Deploy](https://pacific-lake-15233.herokuapp.com/)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://pacific-lake-15233.herokuapp.com/)
 
 - This project has been deployed to Heroku.
 
