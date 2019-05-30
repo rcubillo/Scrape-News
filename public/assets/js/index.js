@@ -23,7 +23,8 @@ $("#new").click(function(){
 				// for each one...
 				for (var i = 0; i < data.length; i++){
 					// display the information on the page
-				 $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br/>" + "<a href=>" + website + data[i].link + "</a>"+ "<button class='save-article btn btn-primary pull-right' data-id='" + data[i]._id + "'>Save</button>" +"</p>" );
+				//  $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br/>" + "<a href=>" + website + data[i].link + "</a>"+ "<button class='save-article btn btn-primary pull-right' data-id='" + data[i]._id + "'>Save</button>" +"</p>" );
+    			$("#articles").append("<div class='jumbotron' data-id='" + data[i]._id + "'>" + data[i].title + "<br/>" + "<a href=>" + website + data[i].link + "</a>"+ "<br/>" + "<button class='save-article btn btn-primary pull-right' data-id='" + data[i]._id + "'>Save</button>" +"</div>" );
 
 					if (data[i].saved) {
 						// disable the save button
