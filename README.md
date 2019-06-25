@@ -1,7 +1,5 @@
 # :page_with_curl: Scrape News :page_with_curl:
 
-[![IMAGE ALT TEXT HERE](public/img/logo.png)](https://youtu.be/RrBuQYUD4co)
-
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ### Overview
